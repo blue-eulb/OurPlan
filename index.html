@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flexbox Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-image: url("./OIP.jpg");
+      background-size: cover;
+      font-family: 'Sono', sans-serif;
+      padding-top: 10%;
+    }
+
+    .plan-title, .plan-price, li {
+      font-family: 'Inter', sans-serif;
+    }
+
+    h1 {
+      color: white;
+      font-family: 'Inter', sans-serif;
+      text-align: center;
+      margin-top: 4rem;
+      font-size: 50px;
+    }
+    .pricing-container {
+      margin: auto;
+      width: 90%;
+      max-width: 1000px;
+      display: flex;
+      flex: 1;
+      justify-content: space-around;
+    }
+
+    .pricing-plan {
+      width: 30%;
+      max-width: 280px;
+      max-height: 400px;
+      background-image: url("./7039031afb06ce33d3564870bca3d355--javier-alternative.jpg");
+      background-size: 500px 500px;
+      background-position: 60px -29px;
+      margin: 10px;
+      padding: 50px 10px;
+      text-align: center;
+      border: 2px solid rgb(51, 34, 15);
+      border-radius: 1.1rem;
+      transition: transform .25s ease-in-out;
+
+    }
+
+    .pricing-plan:hover {
+      transform: scale(1.25);
+    }
+
+
+    
+    li {
+      list-style: none;
+      margin-bottom: 20px;
+      
+    }
+    
+    .lined {
+      text-decoration: line-through;
+    }
+
+    .plan-title {
+      padding-bottom: 10px;
+      font-size: 40px;
+    }
+
+    .plan-price {
+      color: rgb(0, 108, 0);
+      font-size: 20px;
+    }
+
+    .plan-features {
+      padding-right: 30px;
+    }
+
+    hr {
+      border: 2px solid rgb(51, 34, 15);
+      margin-top: 30px;
+      margin-bottom: 40px;
+      margin-left: 23%;
+      width: 80%;
+    }
+
+    button {
+      border: 0px;
+      background-color: white;
+      padding: 5px 25px;
+      border-radius: 20px;
+      transition: background-color .25s ease-out;
+      transition: transform .5s ease;
+    }
+
+    button:hover {
+      color: white;
+      transform: scale(1.1);
+      background-color: rgb(51, 34, 15);
+    }
+
+    /* Hint: What can you do with a media query and flexbox? */
+    @media (max-width: 680px) {
+
+      body {
+        background-size: 100%;
+
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .pricing-container {
+        margin-top: 3rem;
+        display: block;
+      }
+
+      .pricing-plan {
+        margin: auto;
+        margin-bottom: 3rem;
+        width: 75%;
+      }
+
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="top">
+    <h1>Our available Plans</h1>
+  </div>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="plan-title">Basic</div>
+      <div class="plan-price">$9.99/month</div><br>
+      <button class="plan-button">Sign Up</button>
+      <br><hr>
+      <ul class="plan-features">
+        <li>✅ 10GB Storage</li>
+        <li>✅ 1 User</li>
+        <li class="lined"> Support</li>
+      </ul>
+      <br>
+      
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Standard</div>
+      <div class="plan-price">$19.99/month</div><br>
+      <button class="plan-button">Sign Up</button>
+      <br><hr>
+      <ul class="plan-features">
+        <li>✅ 50GB Storage</li>
+        <li>✅ 5 Users</li>
+        <li>✅ Phone &amp; Email Support</li>
+      </ul>
+      
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Premium</div>
+      <div class="plan-price">$49.99/month</div><br>
+      <button class="plan-button">Sign Up</button>
+      <br><hr>
+      <ul class="plan-features">
+        <li>✅ 100GB Storage</li>
+        <li>✅ 10 Users</li>
+        <li>✅ 24/7 Support</li>
+      </ul>
+      
+      
+    </div>
+  </div>
+
+</body>
+
+</html>
