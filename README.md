@@ -1,2 +1,2 @@
-# OurPricing
-responsive/pricing-website/class+self-exercise
+# OurPlans
+responsive/plan-website/class+self-exercise
