@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="uft-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flexbox Pricing Table</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,13 +24,15 @@
       color: white;
       font-family: 'Inter', sans-serif;
       text-align: center;
-      margin-top: 2rem;
+      margin-top: 0px;
       font-size: 50px;
     }
     .pricing-container {
+
       margin: auto;
       width: 90%;
-      max-width: 1000px;
+      min-width: 350px;
+      max-width: 1400px;
       display: flex;
       flex: 1;
       justify-content: space-around;
@@ -42,8 +44,7 @@
       max-height: 400px;
       background-image: url("./7039031afb06ce33d3564870bca3d355--javier-alternative.jpg");
       background-size: 500px 500px;
-      background-position: 60px -40px;
-      margin: 10px;
+      background-position: 60px -29px;
       padding: 50px 10px;
       text-align: center;
       border: 2px solid rgb(51, 34, 15);
@@ -106,7 +107,7 @@
     }
 
     /* Hint: What can you do with a media query and flexbox? */
-    @media (max-width: 680px) {
+    @media (max-width: 1280px) {
 
       body {
         background-size: 100%;
